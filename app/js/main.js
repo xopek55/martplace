@@ -14,7 +14,7 @@ $(function(){
 
         });
      
-
+        $('input, select').styler();
 
 
 });
