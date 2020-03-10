@@ -23,6 +23,11 @@ $(function(){
      
         $('input, select').styler();
 
+        $(".slider__weekly-main-cost-star").rateYo({
+                starWidth: "15px",
+                rating: 4.5,
+                readOnly: true
+        });
 
 });
 
