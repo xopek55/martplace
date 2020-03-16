@@ -6,6 +6,11 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+html,
+body {
+	height: 100%;
+}
 a {
   display: inline-block;
   text-decoration: none;
@@ -21,7 +26,20 @@ li {
 
 body {
   font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
   
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
 }
 
 .container {
@@ -35,6 +53,37 @@ body {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 30px; // change 15px
+}
+
+.breadcrumbs {
+  &__inner {
+    font-size: 15px;
+  }
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+    
+      & + li {
+        padding-left: 25px;
+        &::before {
+          content: "/";
+          position: absolute;
+          left: 8px;
+          color: #fff;
+       }
+      }
+      &:last-child {
+        a,
+        span {
+          color: #bfcad7;
+        }
+      }
+    }
+    a {
+      color: #fff;
+    }
+  }
 }
 
 // @media (max-width: 720px) {
