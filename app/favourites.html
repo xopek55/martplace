@@ -994,36 +994,32 @@
 
       <main>
 
-        <section class="category-search">
+        <section class="favourites">
           <div class="container">
-            <div class="category-search__inner">
-              <div class="category-search-title">
-                <span>4,572</span> wordpress themes, made with love
-              </div>
-              <div class="category-search-form">
-
-                <form>
-                  <input type="search" placeholder="Search your products" required>
-                  <button class="search__inner-btn-search" type="submit">
-                    <span>Search</span>
-                  </button>
-                </form>
-
-              </div>
+            <div class="favourites__inner">
 
               <div class="breadcrumbs">
-                <div class="container">
+                
                   <div class="breadcrumbs__inner">
                     <ul class="breadcrumbs__list">
 
 
                       <li><a href="#">Home </a> </li>
-                      <li><span>Category Page Grid</span> </li>
+                      <li><span>Favorites</span> </li>
                     </ul>
 
                   </div>
-                </div>
+                
               </div>
+
+
+              <div class="favourites__title">
+                Your Favourites
+              </div>
+
+
+
+
 
             </div>
 
@@ -1032,21 +1028,23 @@
 
 
         </section>
-        <section class="category__products-filter">
+
+
+        <section class="favourites__products-filter">
           <div class="container">
-            <div class="category__products-filter__inner">
-              <div class="category__products-filter-main">
-                <div class="category__products-filter-item">
-                  <a href="#">New Products</a>
-                </div>
-                <div class="category__products-filter-item">
-                  <a href="#"> Popular Products</a>
-                </div>
+            <div class="favourites__products-filter__inner">
+              <div class="favourites__products-main-title">
+                <span>570</span>Favourites Found
               </div>
               <div class="category__products-filter-chooses styler">
-                <select class="category__select" name="select">
+                <div class="favourites__products-filterby">
+                  <button type="submit"> Filter By <span class="lnr lnr-chevron-down"></span></button>
 
-                  <option value="#">Price : Low to High</option>
+                </div>
+
+                <select class="category__select favourites__select" name="select">
+
+                  <option value="#"><span>Price :</span> Low to High</option>
                   <option value="#">Price : Low to High</option>
                   <option value="#">Price : Low to High</option>
                   <option value="#">Price : Low to High</option>
@@ -1090,520 +1088,440 @@
           </div>
         </section>
 
-        <section class="product-page">
+        <section class="favourites-page">
           <div class="container">
-            <div class="product-page__inner">
+            <div class="favourites-page__inner">
 
               <div class="category-main__inner">
-                <aside class="product-page__aside">
-                  <div class="category aside__item">
-                    <div class="aside__title">
-                      Categories <span class="lnr lnr-chevron-down"></span>
-                    </div>
-                    <ul class="category__list">
-                      <li><a href="#"><span class="lnr lnr-chevron-right"></span> WordPress </a><span>35</span></li>
-                      <li><a href="#"><span class="lnr lnr-chevron-right"></span> Landing Page </a><span>45</span></li>
-                      <li><a href="#"><span class="lnr lnr-chevron-right"></span> Psd Template</a><span>13</span></li>
-                      <li><a href="#"><span class="lnr lnr-chevron-right"></span> Plugins </a><span>08</span></li>
-                      <li><a href="#"><span class="lnr lnr-chevron-right"></span> HTML Template</a><span>34</span></li>
-                      <li><a href="#"><span class="lnr lnr-chevron-right"></span> Components</a><span>78</span></li>
-                      <li><a href="#"><span class="lnr lnr-chevron-right"></span> Joomla Template</a><span>26</span>
-                      </li>
-                    </ul>
-                  </div>
 
-
-                  <div class="filter-products aside__item">
-                    <div class="aside__title">
-                      Filter Products <span class="lnr lnr-chevron-down"></span>
-                    </div>
-                    <form action="">
-                      <div class="radio-input">
-                        <input class="radio" type="radio" name="" value=""> Trending Products <br>
-                      </div>
-                      <div class="radio-input">
-                        <input type="radio" name="" value=""> Popular Products<br></div>
-                      <div class="radio-input">
-                        <input type="radio" name="" value=""> New Products<br></div>
-                      <div class="radio-input">
-                        <input type="radio" name="" value=""> Best Seller<br></div>
-                      <div class="radio-input">
-                        <input type="radio" name="" value=""> Best Rating<br></div>
-                      <div class="radio-input">
-                        <input type="radio" name="" value=""> Low Price<br></div>
-                      <div class="radio-input">
-                        <input type="radio" name="" value=""> High Price<br></div>
-                    </form>
-
-
-
-                  </div>
-
-                  <div class="products-range aside__item">
-                    <div class="aside__title">
-                      Pricing Range <span class="lnr lnr-chevron-down"></span>
-                    </div>
-                    <div class="aside__product-item">
-
-                      <form>
-                        <input type="text" class="js-range-slider" name="my_range" value="" />
-
-                      </form>
-                      <div class="products-range-slider__inner">
-                        <form>
-                          <input type="text" class="range-slider-from" name="my_range" value="$" />
-
-                        </form>
-
-                        <form>
-                          <input type="text" class="range-slider-to" name="my_range" value="" />
-
-                        </form>
-
-                      </div>
-                      <div class="products-range-btn">
-                        <button type="submit">Search Update</button>
-                      </div>
-                    </div>
-
-                  </div>
-
-                </aside>
 
                 <div class="category-page__content">
 
 
-
-                  <div class="products__main">
+                  <div class="products__main favourites-grid">
                     <div class="products__main-logo">
-                      <img src="images/category/category-bg.jpg" alt="">
-
+                      <img src="images/products/bg-green.jpg" alt="">
+                     
 
                     </div>
 
 
                     <div class="products__main-title">
-                      Finance and Consulting
-                      Business Theme
+                      Bryson - Portfolio Template
                     </div>
                     <div class="products__main-info">
                       <div class="slider__weekly-main-user">
                         <img src="images/icons/slider-logo-user.jpg" alt="">
-                        <a href="">Theme-Valley</a>
+                        <a href="">Artcorner</a>
                       </div>
-
-
-
+                      <div class="slider__weekly-main-category">
+                        <img src="images/icons/slider-logo-html.png" alt="">
+                        <a href=""> HTML</a>
+                      </div>
                     </div>
-                    <div class="products__main-buy_inner">
-                      <div class="slider__weekly-main-cost-star">
+                    <div class="products__main-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
 
+                    <div class="products__main-cost">
+                      <div class="products__inner-main-cost">
+                        <div class="products__main-price">
+                          <a href="#">$10</a>
+                        </div>
+                        <div class="products__main-like">
+                          <span class="lnr lnr-heart"></span>
+                          56
+                        </div>
+                        <div class="slider__weekly-main-cost-star">
+
+                        </div>
                       </div>
                       <div class="products__main-buy">
                         <span class="lnr lnr-cart"></span>
-                        247
+                        68
                       </div>
                     </div>
-                    <div class="products__main-cost">
-                      <div class="products__inner-main-cost">
 
-                        <div class="products__main-price">
-                          <a href="#">$18</a>
-                        </div>
-
-
-                      </div>
-                      <div class="slider__weekly-main-category">
-                        <img src="images/icons/slider-logo-wordpress.png" alt="">
-                        <a href=""> Wordpress</a>
-                      </div>
-
-                    </div>
 
                   </div>
-                  <div class="products__main category-grid-bottom">
+                  <div class="products__main favourites-grid">
                     <div class="products__main-logo">
-                      <img src="images/category/category-bg.jpg" alt="">
-
+                      <img src="images/products/bg-green.jpg" alt="">
+                     
 
                     </div>
 
 
                     <div class="products__main-title">
-                      Finance and Consulting
-                      Business Theme
+                      Bryson - Portfolio Template
                     </div>
                     <div class="products__main-info">
                       <div class="slider__weekly-main-user">
                         <img src="images/icons/slider-logo-user.jpg" alt="">
-                        <a href="">Theme-Valley</a>
+                        <a href="">Artcorner</a>
                       </div>
-
-
-
+                      <div class="slider__weekly-main-category">
+                        <img src="images/icons/slider-logo-html.png" alt="">
+                        <a href=""> HTML</a>
+                      </div>
                     </div>
-                    <div class="products__main-buy_inner">
-                      <div class="slider__weekly-main-cost-star">
+                    <div class="products__main-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
 
+                    <div class="products__main-cost">
+                      <div class="products__inner-main-cost">
+                        <div class="products__main-price">
+                          <a href="#">$10</a>
+                        </div>
+                        <div class="products__main-like">
+                          <span class="lnr lnr-heart"></span>
+                          56
+                        </div>
+                        <div class="slider__weekly-main-cost-star">
+
+                        </div>
                       </div>
                       <div class="products__main-buy">
                         <span class="lnr lnr-cart"></span>
-                        247
+                        68
                       </div>
                     </div>
-                    <div class="products__main-cost">
-                      <div class="products__inner-main-cost">
 
-                        <div class="products__main-price">
-                          <a href="#">$18</a>
-                        </div>
-
-
-                      </div>
-                      <div class="slider__weekly-main-category">
-                        <img src="images/icons/slider-logo-wordpress.png" alt="">
-                        <a href=""> Wordpress</a>
-                      </div>
-
-                    </div>
 
                   </div>
-
-                  <div class="products__main category-grid-bottom">
+                  <div class="products__main favourites-grid">
                     <div class="products__main-logo">
-                      <img src="images/category/category-bg.jpg" alt="">
-
+                      <img src="images/products/bg-green.jpg" alt="">
+                      
 
                     </div>
 
 
                     <div class="products__main-title">
-                      Finance and Consulting
-                      Business Theme
+                      Bryson - Portfolio Template
                     </div>
                     <div class="products__main-info">
                       <div class="slider__weekly-main-user">
                         <img src="images/icons/slider-logo-user.jpg" alt="">
-                        <a href="">Theme-Valley</a>
+                        <a href="">Artcorner</a>
                       </div>
-
-
-
+                      <div class="slider__weekly-main-category">
+                        <img src="images/icons/slider-logo-html.png" alt="">
+                        <a href=""> HTML</a>
+                      </div>
                     </div>
-                    <div class="products__main-buy_inner">
-                      <div class="slider__weekly-main-cost-star">
+                    <div class="products__main-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
 
+                    <div class="products__main-cost">
+                      <div class="products__inner-main-cost">
+                        <div class="products__main-price">
+                          <a href="#">$10</a>
+                        </div>
+                        <div class="products__main-like">
+                          <span class="lnr lnr-heart"></span>
+                          56
+                        </div>
+                        <div class="slider__weekly-main-cost-star">
+
+                        </div>
                       </div>
                       <div class="products__main-buy">
                         <span class="lnr lnr-cart"></span>
-                        247
+                        68
                       </div>
                     </div>
-                    <div class="products__main-cost">
-                      <div class="products__inner-main-cost">
 
-                        <div class="products__main-price">
-                          <a href="#">$18</a>
-                        </div>
-
-
-                      </div>
-                      <div class="slider__weekly-main-category">
-                        <img src="images/icons/slider-logo-wordpress.png" alt="">
-                        <a href=""> Wordpress</a>
-                      </div>
-
-                    </div>
 
                   </div>
-
-                  <div class="products__main category-grid-bottom">
+                  <div class="products__main favourites-grid">
                     <div class="products__main-logo">
-                      <img src="images/category/category-bg.jpg" alt="">
-
+                      <img src="images/products/bg-green.jpg" alt="">
+                    
 
                     </div>
 
 
                     <div class="products__main-title">
-                      Finance and Consulting
-                      Business Theme
+                      Bryson - Portfolio Template
                     </div>
                     <div class="products__main-info">
                       <div class="slider__weekly-main-user">
                         <img src="images/icons/slider-logo-user.jpg" alt="">
-                        <a href="">Theme-Valley</a>
+                        <a href="">Artcorner</a>
                       </div>
-
-
-
+                      <div class="slider__weekly-main-category">
+                        <img src="images/icons/slider-logo-html.png" alt="">
+                        <a href=""> HTML</a>
+                      </div>
                     </div>
-                    <div class="products__main-buy_inner">
-                      <div class="slider__weekly-main-cost-star">
+                    <div class="products__main-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
 
+                    <div class="products__main-cost">
+                      <div class="products__inner-main-cost">
+                        <div class="products__main-price">
+                          <a href="#">$10</a>
+                        </div>
+                        <div class="products__main-like">
+                          <span class="lnr lnr-heart"></span>
+                          56
+                        </div>
+                        <div class="slider__weekly-main-cost-star">
+
+                        </div>
                       </div>
                       <div class="products__main-buy">
                         <span class="lnr lnr-cart"></span>
-                        247
+                        68
                       </div>
                     </div>
-                    <div class="products__main-cost">
-                      <div class="products__inner-main-cost">
 
-                        <div class="products__main-price">
-                          <a href="#">$18</a>
-                        </div>
-
-
-                      </div>
-                      <div class="slider__weekly-main-category">
-                        <img src="images/icons/slider-logo-wordpress.png" alt="">
-                        <a href=""> Wordpress</a>
-                      </div>
-
-                    </div>
 
                   </div>
-
-                  <div class="products__main category-grid-bottom">
+                  <div class="products__main favourites-grid">
                     <div class="products__main-logo">
-                      <img src="images/category/category-bg.jpg" alt="">
-
+                      <img src="images/products/bg-green.jpg" alt="">
+                   
 
                     </div>
 
 
                     <div class="products__main-title">
-                      Finance and Consulting
-                      Business Theme
+                      Bryson - Portfolio Template
                     </div>
                     <div class="products__main-info">
                       <div class="slider__weekly-main-user">
                         <img src="images/icons/slider-logo-user.jpg" alt="">
-                        <a href="">Theme-Valley</a>
+                        <a href="">Artcorner</a>
                       </div>
-
-
-
+                      <div class="slider__weekly-main-category">
+                        <img src="images/icons/slider-logo-html.png" alt="">
+                        <a href=""> HTML</a>
+                      </div>
                     </div>
-                    <div class="products__main-buy_inner">
-                      <div class="slider__weekly-main-cost-star">
+                    <div class="products__main-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
 
+                    <div class="products__main-cost">
+                      <div class="products__inner-main-cost">
+                        <div class="products__main-price">
+                          <a href="#">$10</a>
+                        </div>
+                        <div class="products__main-like">
+                          <span class="lnr lnr-heart"></span>
+                          56
+                        </div>
+                        <div class="slider__weekly-main-cost-star">
+
+                        </div>
                       </div>
                       <div class="products__main-buy">
                         <span class="lnr lnr-cart"></span>
-                        247
+                        68
                       </div>
                     </div>
-                    <div class="products__main-cost">
-                      <div class="products__inner-main-cost">
 
-                        <div class="products__main-price">
-                          <a href="#">$18</a>
-                        </div>
-
-
-                      </div>
-                      <div class="slider__weekly-main-category">
-                        <img src="images/icons/slider-logo-wordpress.png" alt="">
-                        <a href=""> Wordpress</a>
-                      </div>
-
-                    </div>
 
                   </div>
-
-                  <div class="products__main category-grid-bottom">
+                  <div class="products__main favourites-grid">
                     <div class="products__main-logo">
-                      <img src="images/category/category-bg.jpg" alt="">
-
+                      <img src="images/products/bg-green.jpg" alt="">
+                     
 
                     </div>
 
 
                     <div class="products__main-title">
-                      Finance and Consulting
-                      Business Theme
+                      Bryson - Portfolio Template
                     </div>
                     <div class="products__main-info">
                       <div class="slider__weekly-main-user">
                         <img src="images/icons/slider-logo-user.jpg" alt="">
-                        <a href="">Theme-Valley</a>
+                        <a href="">Artcorner</a>
                       </div>
-
-
-
+                      <div class="slider__weekly-main-category">
+                        <img src="images/icons/slider-logo-html.png" alt="">
+                        <a href=""> HTML</a>
+                      </div>
                     </div>
-                    <div class="products__main-buy_inner">
-                      <div class="slider__weekly-main-cost-star">
+                    <div class="products__main-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
 
+                    <div class="products__main-cost">
+                      <div class="products__inner-main-cost">
+                        <div class="products__main-price">
+                          <a href="#">$10</a>
+                        </div>
+                        <div class="products__main-like">
+                          <span class="lnr lnr-heart"></span>
+                          56
+                        </div>
+                        <div class="slider__weekly-main-cost-star">
+
+                        </div>
                       </div>
                       <div class="products__main-buy">
                         <span class="lnr lnr-cart"></span>
-                        247
+                        68
                       </div>
                     </div>
-                    <div class="products__main-cost">
-                      <div class="products__inner-main-cost">
 
-                        <div class="products__main-price">
-                          <a href="#">$18</a>
-                        </div>
-
-
-                      </div>
-                      <div class="slider__weekly-main-category">
-                        <img src="images/icons/slider-logo-wordpress.png" alt="">
-                        <a href=""> Wordpress</a>
-                      </div>
-
-                    </div>
 
                   </div>
-
-                  <div class="products__main category-grid-bottom">
+                  <div class="products__main favourites-grid">
                     <div class="products__main-logo">
-                      <img src="images/category/category-bg.jpg" alt="">
-
+                      <img src="images/products/bg-green.jpg" alt="">
+                   
 
                     </div>
 
 
                     <div class="products__main-title">
-                      Finance and Consulting
-                      Business Theme
+                      Bryson - Portfolio Template
                     </div>
                     <div class="products__main-info">
                       <div class="slider__weekly-main-user">
                         <img src="images/icons/slider-logo-user.jpg" alt="">
-                        <a href="">Theme-Valley</a>
+                        <a href="">Artcorner</a>
                       </div>
-
-
-
+                      <div class="slider__weekly-main-category">
+                        <img src="images/icons/slider-logo-html.png" alt="">
+                        <a href=""> HTML</a>
+                      </div>
                     </div>
-                    <div class="products__main-buy_inner">
-                      <div class="slider__weekly-main-cost-star">
+                    <div class="products__main-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
 
+                    <div class="products__main-cost">
+                      <div class="products__inner-main-cost">
+                        <div class="products__main-price">
+                          <a href="#">$10</a>
+                        </div>
+                        <div class="products__main-like">
+                          <span class="lnr lnr-heart"></span>
+                          56
+                        </div>
+                        <div class="slider__weekly-main-cost-star">
+
+                        </div>
                       </div>
                       <div class="products__main-buy">
                         <span class="lnr lnr-cart"></span>
-                        247
+                        68
                       </div>
                     </div>
-                    <div class="products__main-cost">
-                      <div class="products__inner-main-cost">
 
-                        <div class="products__main-price">
-                          <a href="#">$18</a>
-                        </div>
-
-
-                      </div>
-                      <div class="slider__weekly-main-category">
-                        <img src="images/icons/slider-logo-wordpress.png" alt="">
-                        <a href=""> Wordpress</a>
-                      </div>
-
-                    </div>
 
                   </div>
-
-                  <div class="products__main category-grid-bottom">
+                  <div class="products__main favourites-grid">
                     <div class="products__main-logo">
-                      <img src="images/category/category-bg.jpg" alt="">
-
+                      <img src="images/products/bg-green.jpg" alt="">
+                   
 
                     </div>
 
 
                     <div class="products__main-title">
-                      Finance and Consulting
-                      Business Theme
+                      Bryson - Portfolio Template
                     </div>
                     <div class="products__main-info">
                       <div class="slider__weekly-main-user">
                         <img src="images/icons/slider-logo-user.jpg" alt="">
-                        <a href="">Theme-Valley</a>
+                        <a href="">Artcorner</a>
                       </div>
-
-
-
+                      <div class="slider__weekly-main-category">
+                        <img src="images/icons/slider-logo-html.png" alt="">
+                        <a href=""> HTML</a>
+                      </div>
                     </div>
-                    <div class="products__main-buy_inner">
-                      <div class="slider__weekly-main-cost-star">
+                    <div class="products__main-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
 
+                    <div class="products__main-cost">
+                      <div class="products__inner-main-cost">
+                        <div class="products__main-price">
+                          <a href="#">$10</a>
+                        </div>
+                        <div class="products__main-like">
+                          <span class="lnr lnr-heart"></span>
+                          56
+                        </div>
+                        <div class="slider__weekly-main-cost-star">
+
+                        </div>
                       </div>
                       <div class="products__main-buy">
                         <span class="lnr lnr-cart"></span>
-                        247
+                        68
                       </div>
                     </div>
-                    <div class="products__main-cost">
-                      <div class="products__inner-main-cost">
 
-                        <div class="products__main-price">
-                          <a href="#">$18</a>
-                        </div>
-
-
-                      </div>
-                      <div class="slider__weekly-main-category">
-                        <img src="images/icons/slider-logo-wordpress.png" alt="">
-                        <a href=""> Wordpress</a>
-                      </div>
-
-                    </div>
 
                   </div>
-
-                  <div class="products__main category-grid-bottom">
+                  <div class="products__main favourites-grid">
                     <div class="products__main-logo">
-                      <img src="images/category/category-bg.jpg" alt="">
-
+                      <img src="images/products/bg-green.jpg" alt="">
+                     
 
                     </div>
 
 
                     <div class="products__main-title">
-                      Finance and Consulting
-                      Business Theme
+                      Bryson - Portfolio Template
                     </div>
                     <div class="products__main-info">
                       <div class="slider__weekly-main-user">
                         <img src="images/icons/slider-logo-user.jpg" alt="">
-                        <a href="">Theme-Valley</a>
+                        <a href="">Artcorner</a>
                       </div>
-
-
-
+                      <div class="slider__weekly-main-category">
+                        <img src="images/icons/slider-logo-html.png" alt="">
+                        <a href=""> HTML</a>
+                      </div>
                     </div>
-                    <div class="products__main-buy_inner">
-                      <div class="slider__weekly-main-cost-star">
+                    <div class="products__main-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
 
+                    <div class="products__main-cost">
+                      <div class="products__inner-main-cost">
+                        <div class="products__main-price">
+                          <a href="#">$10</a>
+                        </div>
+                        <div class="products__main-like">
+                          <span class="lnr lnr-heart"></span>
+                          56
+                        </div>
+                        <div class="slider__weekly-main-cost-star">
+
+                        </div>
                       </div>
                       <div class="products__main-buy">
                         <span class="lnr lnr-cart"></span>
-                        247
+                        68
                       </div>
                     </div>
-                    <div class="products__main-cost">
-                      <div class="products__inner-main-cost">
 
-                        <div class="products__main-price">
-                          <a href="#">$18</a>
-                        </div>
-
-
-                      </div>
-                      <div class="slider__weekly-main-category">
-                        <img src="images/icons/slider-logo-wordpress.png" alt="">
-                        <a href=""> Wordpress</a>
-                      </div>
-
-                    </div>
 
                   </div>
+
 
                   <div class="products__main page-line">
                     <div class="products__main-logo">
@@ -1961,25 +1879,25 @@
             </div>
           </div>
         </section>
-<section class="category-join">
-      <div class="container">
-        <div class="join-us__inner">
-          <div class="join-us-main">
-            <div class="join-us-main-title">
-              Ready to Join Our Marketplace!
-            </div>
-            <div class="join-us-main-text">
-              Over 25,000 designers and developers trust the MartPlace.
-            </div>
-      
-            <div>
-              <a class="join-us-main-btn" href="">Join Us Today</a>
+        <section class="category-join">
+          <div class="container">
+            <div class="join-us__inner">
+              <div class="join-us-main">
+                <div class="join-us-main-title">
+                  Ready to Join Our Marketplace!
+                </div>
+                <div class="join-us-main-text">
+                  Over 25,000 designers and developers trust the MartPlace.
+                </div>
+
+                <div>
+                  <a class="join-us-main-btn" href="">Join Us Today</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-</section>
+        </section>
 
 
       </main>
@@ -2013,7 +1931,7 @@
                 </div>
                 <div class="footer-main-item-support">
                   <a href="mailto:support@aazztech.com"><span class="lnr lnr-envelope footer-icon"></span>
-                      support@aazztech.com</a>
+                    support@aazztech.com</a>
                 </div>
                 <div class="footer-main-item-address">
                   <div><span class="lnr lnr-map-marker"></span>

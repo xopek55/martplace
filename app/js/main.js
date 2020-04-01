@@ -41,16 +41,43 @@ $(function () {
                 readOnly: true
         });
 
-        // $(".js-range-slider").ionRangeSlider({
-        //         type: "double",
-        //         min: 0,
-        //         max: 1000,
-        //         from: 0,
-        //         to: 600,
-        //         prefix: "$",
-        //        
-        // });
+        $('.single-products__tabs .tab').on('click', function (event) {
+                var id = $(this).attr('data-id');
+                $('.single-products__tabs').find('.tab-item').removeClass('active-tab').hide();
+                $('.single-products__tabs .tabs').find('.tab').removeClass('active');
+                $(this).addClass('active');
+                $('#' + id).addClass('active-tab').fadeIn();
+                return false;
+        });
 
+
+        
+
+
+           $('.category__products-filter-line').on('click', function () {
+                   $('.products__main.page-line').addClass('list');
+                   $('.products__main').addClass('page-off');
+                   $('.products__main-logo').addClass('active');
+                   $('.products__main-logo').removeClass('active');
+           });
+
+           $('.category__products-filter-grid').on('click', function () {
+                   $('.products__main.page-line').removeClass('list');
+                   $('.products__main').removeClass('page-off');
+                   $('.icon-th-large').addClass('active');
+                   $('.icon-th-list').removeClass('active');
+           });
+
+             $('.single-multiuser').on('click', function () {
+                     $('.single-singleuser').removeClass('checked', 'focused');
+                     $('.single-multiuser').addClass('checked', 'focused');
+                    
+             });
+               $('.single-singleuser').on('click', function () {
+                       $('.single-multiuser').removeClass('checked', 'focused');
+                        $('.single-singleuser').addClass('checked', 'focused');
+
+               });
 
         var $range = $(".js-range-slider");
         var $inputFrom = $(".range-slider-from");
