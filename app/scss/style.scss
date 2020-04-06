@@ -769,7 +769,7 @@ lnr-heart.top-user,
 .search__inner {
   height: 725px;
   text-align: center;
-  padding-top: 185px;
+  padding-top: 175px;
   color: #fff;
   z-index: 6;
 
@@ -799,6 +799,13 @@ lnr-heart.top-user,
   margin-right: 30px;
 }
 
+.search__inner-btn {
+margin-bottom: 165px;
+
+}
+
+ 
+
 .search__inner-btn1 {
   font-size: 16px;
   height: 55px;
@@ -810,7 +817,7 @@ lnr-heart.top-user,
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
   border-radius: 28px;
   color: #fff;
-  margin-bottom: 170px;
+ 
   transition: all 0.3s;
 }
 .search__inner-btn1:hover {
@@ -822,6 +829,7 @@ lnr-heart.top-user,
   z-index: 5;
 }
 .search__inner-form {
+
   height: 135px;
   padding-left: 40px;
   padding-right: 40px;
@@ -831,11 +839,18 @@ lnr-heart.top-user,
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  
   z-index: 4;
+
+  form {
+max-width: 615px;
+  width: 100%;
+  }
 
   input {
     border-radius: 5px 0px 0px 5px;
-    width: 615px;
+    max-width: 615px;
+  width: 100%;
     height: 55px;
     border: 1px solid #d9dfe5;
     font-size: 15px;
@@ -891,7 +906,9 @@ lnr-heart.top-user,
   left: 15px;
   top: -15px;
   height: 135px;
-  width: 1110px;
+
+  max-width: 1110px;
+  width: 100%;
   border-radius: 5px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
@@ -901,7 +918,8 @@ lnr-heart.top-user,
   content: "";
   left: 30px;
   top: -30px;
-  width: 1080px;
+  max-width: 1080px;
+  width: 100%;
   height: 135px;
   border-radius: 5px;
   position: absolute;
@@ -963,7 +981,7 @@ lnr-heart.top-user,
 
 .information__inner-box {
   border-radius: 5px;
-  height: 400px;
+  min-height: 400px;
   padding: 40px 40px;
   text-align: center;
   transition: all 0.3s;
@@ -994,7 +1012,7 @@ lnr-heart.top-user,
 // start slider weekly
 
 .slider__weekly {
-  height: 850px;
+  min-height: 850px;
   background-color: $bg;
 }
 
@@ -1061,7 +1079,7 @@ lnr-heart.top-user,
   align-items: center;
   background-color: #fff;
   width: 100%;
-  height: 450px;
+  min-height: 450px;
   border-radius: 0px 5px 5px 0;
   box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
 }
@@ -1193,15 +1211,16 @@ lnr-heart.top-user,
 }
 .products__main__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: -30px;
 }
 
 .products__newest {
   padding: 0 30px;
   margin-bottom: 30px;
-  height: 110px;
+  min-height: 110px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1210,6 +1229,10 @@ lnr-heart.top-user,
   border-radius: 5px;
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   font-size: 30px;
+}
+
+.products__newest-title {
+  margin-right: 10px;
 }
 
 .products__newest-filter,
@@ -1225,8 +1248,9 @@ lnr-heart.top-user,
 }
 
 .products__inner-category {
-  height: 92px;
+  min-height: 92px;
   width: 100%;
+  padding: 30px;
   padding-left: 30px;
   display: flex;
   border-radius: 5px;
@@ -1288,8 +1312,11 @@ lnr-heart.top-user,
 }
 
 .products__main {
+   flex-basis: calc(33.33333% - 30px);
+    margin-left: 29px;
   border-radius: 5px;
-  width: 361px;
+  max-width: 361px;
+  width: 100%;
   background-color: #fff;
   margin-bottom: 30px;
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
@@ -1446,7 +1473,7 @@ lnr-heart.top-user,
 //start counters
 .counters {
   background-color: #000;
-  height: 350px;
+  min-height: 350px;
   padding-top: 95px;
 }
 
@@ -1518,8 +1545,8 @@ lnr-heart.top-user,
 
 .choose_inner-general-main-item {
   display: flex;
-  justify-content: space-between;
-
+  justify-content: start;
+  margin-left: -30px;
   flex-wrap: wrap;
   margin-bottom: 120px;
 }
@@ -1528,10 +1555,10 @@ lnr-heart.top-user,
   box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
   align-items: center;
   text-align: center;
-
+  flex-basis: calc(33.33333% - 30px);
   max-width: 361px;
   padding: 0 30px 58px 30px;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px 30px;
 }
 
 .choose-main-item-digit {
@@ -1755,7 +1782,8 @@ lnr-heart.top-user,
 
 .news__inner-inner-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-left: -30px;
 }
 
 .news__main-title.products__main-title {
@@ -2253,17 +2281,21 @@ lnr-heart.top-user,
 
 .category-page__content {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: flex-start;
   align-items: cener;
   flex-wrap: wrap;
   transition: all 0.5s;
+  margin-left: -35px;
 
   .products__main {
-    margin-bottom: 0px;
+    flex-basis: calc(33.33333% - 30px);
+    margin-left: 31px;
   }
 
   .products__main.category-grid-bottom,
   .products__main.page-line {
+    flex-basis: 100%;
     margin-bottom: 30px;
   }
 
@@ -2329,7 +2361,8 @@ lnr-heart.top-user,
   li span {
     display: block;
     background-color: #fff;
-    width: 50px;
+    max-width: 50px;
+    width: 100%;
     height: 38px;
     font-size: 16px;
     font-weight: 500;
@@ -2344,8 +2377,14 @@ lnr-heart.top-user,
     color: #fff;
   }
 
+  li {
+    max-width: 50px;
+     width: 100%;
+  }
+
   li + li {
     margin-left: 5px;
+    
   }
 }
 
@@ -2368,7 +2407,7 @@ lnr-heart.top-user,
     .products__main-text,
     .products__main-info,
     .header__top-message-main-category.message-main-bubble,
-    // .category-page__content.slider__weekly-main-cost-star,
+  
     .products__main-buy_inner,
     .products__main-price {
       margin: 0;
@@ -2883,7 +2922,6 @@ lnr-heart.top-user,
   .prising__tariffs-item-cost::before {
     content: "$";
     font-size: 18px;
-
     position: absolute;
     top: 36px;
     left: 65px;
@@ -2892,6 +2930,7 @@ lnr-heart.top-user,
   .prising__tariffs-item-list {
     padding-left: 23px;
     margin-bottom: 45px;
+    
     li {
       position: relative;
       color: #555555;
@@ -2912,10 +2951,11 @@ lnr-heart.top-user,
       height: 7px;
       background-color: #c5cad4;
       border-radius: 50%;
-      display: block;
-      position: absolute;
-      top: 6px;
-      left: -23px;
+       display: inline-block;
+       margin-right: 20px;
+      // position: absolute;
+      // top: 6px;
+      // left: -23px;
     }
   }
   .prising__tariffs-item-btn {
@@ -3077,6 +3117,10 @@ lnr-heart.top-user,
 
 .contacts-map {
   background-color: #e3e6ec;
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 
@@ -3211,7 +3255,8 @@ lnr-heart.top-user,
 }
 .aside__item-banner {
   border-radius: 5px;
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   height: 270px;
   display: flex;
   justify-content: center;
@@ -3243,6 +3288,8 @@ lnr-heart.top-user,
   border-radius: 5px;
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   margin-bottom: 40px;
+  max-width: 750px;
+  width: 100%;
 
   .blog__inner-main-content-title {
     border-bottom: 1px solid #eff1f5;
